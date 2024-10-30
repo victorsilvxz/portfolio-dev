@@ -427,3 +427,12 @@ footer .line-footer p a {
         text-align: center;
     }
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 668px) {
+
+    .btn-abrir-menu{
+        display: block;
+    }
+    
+}
