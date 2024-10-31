@@ -252,6 +252,11 @@ section.sobre .flex {
     text-align: justify;
 }
 
+.img-sobre img {
+    width: 100%;
+    border-radius: 15px; 
+}
+
 .btn-social button {
     width: 60px;
     height: 60px;
