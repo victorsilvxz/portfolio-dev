@@ -271,8 +271,7 @@ section.sobre .flex {
 
 /* ESTILO DO FORMULÁRIO DE CONTATO */
 section.formulario {
-    padding: 80px 4%;
-    border-radius: 40px
+    padding: 40px 4%;
 }
 
 form {
