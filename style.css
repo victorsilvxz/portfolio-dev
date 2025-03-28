@@ -223,6 +223,17 @@ section.especiliadades .flex {
 }
 
 /* ESTILO DO SOBRE */
+.sobre .interface {
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;  
+}
+
+.sobre .img-sobre {
+    flex: 0 0 40%;  
+    margin-right: 20px;  
+}
+
 section.sobre {
     padding: 10px 4%;
 }
@@ -234,8 +245,8 @@ section.sobre .flex {
 
 .sobre .txt-sobre {
     color: #fff;
+    flex: 1;
 }
-
 .sobre .txt-sobre h2 {
     font-size: 40px;
     line-height: 40px;
