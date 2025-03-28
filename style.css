@@ -227,7 +227,7 @@ section.especiliadades .flex {
 /* ESTILO DO SOBRE */
 .sobre .interface {
     display: flex;
-    flex-wrap: wrap;  /* Permite que a imagem e o texto se ajustem em diferentes linhas quando necessário */
+    flex-wrap: no-wrap;  /* Permite que a imagem e o texto se ajustem em diferentes linhas quando necessário */
     align-items: center;
     justify-content: space-between;
 }
@@ -249,7 +249,7 @@ section.sobre .flex {
 
 .sobre .txt-sobre {
     color: #fff;
-    flex: 1;
+    flex: flex-row;
 }
 
 .sobre .txt-sobre h2 {
