@@ -227,6 +227,7 @@ section.especiliadades .flex {
     display: flex;  
     align-items: center;  
     justify-content: space-between;  
+    flex-wrap: wrap;  /* Permite que a imagem e o texto se ajustem em diferentes linhas quando necessário */
 }
 
 .sobre .img-sobre {
@@ -247,6 +248,7 @@ section.sobre .flex {
     color: #fff;
     flex: 1;
 }
+
 .sobre .txt-sobre h2 {
     font-size: 40px;
     line-height: 40px;
@@ -355,7 +357,6 @@ footer .line-footer p a {
 }
 
 @media screen and (max-width: 1020px) {
-
     /* CLASSES GERAIS */
     .flex {
         flex-direction: column;
@@ -407,7 +408,7 @@ footer .line-footer p a {
     .sobre .txt-sobre h2 {
         font-size: 34px;
         line-height: 35px;
-        text-align: center;
+        text-align: center;  /* Alinha o título ao centro em dispositivos menores */
     }
     
     .btn-social{
