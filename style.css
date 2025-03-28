@@ -197,6 +197,7 @@ section.especiliadades {
 
 section.especiliadades .flex {
     gap: 60px;
+    flex-wrap: wrap; /* Garante que os itens se ajustem corretamente */
 }
 
 .especiliadades .especialidades-box {
@@ -205,6 +206,7 @@ section.especiliadades .flex {
     border-radius: 20px;
     margin-top: 45px;
     transition: .2s;
+    flex: 1 1 30%; /* Permite que as especialidades se ajustem em telas menores */
 }
 
 .especiliadades .especialidades-box:hover {
@@ -224,15 +226,16 @@ section.especiliadades .flex {
 
 /* ESTILO DO SOBRE */
 .sobre .interface {
-    display: flex;  
-    align-items: center;  
-    justify-content: space-between;  
+    display: flex;
     flex-wrap: wrap;  /* Permite que a imagem e o texto se ajustem em diferentes linhas quando necessário */
+    align-items: center;
+    justify-content: space-between;
 }
 
 .sobre .img-sobre {
-    flex: 0 0 40%;  
-    margin-right: 20px;  
+    flex: 1 1 45%;  /* Garantindo que a imagem ocupe até 45% do espaço */
+    margin-right: 20px;
+    max-width: 100%;  /* Garante que a imagem não ultrapasse o limite do seu contêiner */
 }
 
 section.sobre {
@@ -400,6 +403,15 @@ footer .line-footer p a {
         padding: 40px 8%;
     }
 
+    section.especiliadades .flex {
+        gap: 20px;
+    }
+
+    .especiliadades .especialidades-box {
+        flex: 1 1 100%; /* Faz com que as especialidades ocupem toda a largura em telas menores */
+        margin-bottom: 20px;
+    }
+
     /* SOBRE */
     section.sobre {
         padding: 80px 8%;
@@ -410,13 +422,14 @@ footer .line-footer p a {
         line-height: 35px;
         text-align: center;  /* Alinha o título ao centro em dispositivos menores */
     }
-    
+
     .btn-social{
         text-align: center;
     }
 
     .img-sobre img{
         width: 100%;
+        height: auto; /* Garante que a imagem se ajuste corretamente no mobile */
     }
 
     /* PORTFÓLIO */
